@@ -6,21 +6,21 @@ const Navbar = () => {
     { title: "Login", href: "#" },
   ];
   return (
-    <div className="flex justify-between py-6 items-center">
-      <span className="text-2xl font-bold">Finta</span>
-      <div className="flex gap-4 items-center">
+    <div className="flex items-center justify-between py-6">
+      <span className="text-3xl font-bold">Finta</span>
+      <div className="flex items-center gap-4">
         {links.map((link, idx) => {
           return (
             <a
               href={link.href}
               key={idx}
-              className="text-neutral-900 hover:text-neutral-700/90 transition-colors ease-in-out duration-200"
+              className="text-neutral-900 transition-colors duration-200 ease-in-out hover:text-neutral-700/90"
             >
               {link.title}
             </a>
           );
         })}
-        <button className="mx-4 bg-blue-500 rounded-lg text-white px-4 py-2 text-shadow-md shadow-xl shadow-neutral-200 hover:bg-blue-500/90  transition-colors ease-in-out duration-200 border-blue-100 border">
+        <button className="mx-4 rounded-lg border border-blue-100 bg-blue-500 px-4 py-2 text-white shadow-xl shadow-neutral-200 transition-colors duration-200 ease-in-out text-shadow-md hover:bg-blue-500/90">
           Get Started
         </button>
       </div>
