@@ -1,6 +1,6 @@
 "use client";
 
-import { MoonIcon, MoonStarIcon, SunDimIcon } from "lucide-react";
+import { MoonIcon, SunDimIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 
 export default function ThemeToggle() {
