@@ -17,8 +17,8 @@ export default function CardContainer() {
       <p
         className={cn(
           "text-sm tracking-tight leading-5 text-center",
-          "bg-linear-to-b from-neutral-800 via-neutral-600 to-neutral-400 bg-clip-text text-transparent",
-          "dark:from-neutral-200 via-neutral-300 to-neutral-500",
+          "bg-linear-to-b from-neutral-800 to-neutral-400 bg-clip-text text-transparent",
+          "dark:from-neutral-200 dark:to-neutral-500",
           "max-w-md mt-2 mb-8"
         )}
       >
@@ -43,7 +43,7 @@ export default function CardContainer() {
           fill
           className={cn(
             "object-cover object-top rounded-lg",
-            "rotate-x-30 -rotate-y-20 rotate-z-20 scale-120 transform transition-transform duration-300",
+            "sm:rotate-x-30 sm:-rotate-y-20 sm:rotate-z-20 sm:scale-120 transform transition-transform duration-300",
             "group-hover:scale-100 group-hover:rotate-x-0 group-hover:rotate-y-0 group-hover:rotate-z-0"
           )}
         />
